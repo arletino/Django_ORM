@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>For template</title>
+    </head>
+    <body>
+        <h2>Example template with for</h2>
+        <ul>
+        {% for messages in messages %}
+            <li>message</li>
+        {% endfor %}
+        </ul>
+        
+        <h2>Example use Dict key and values </h2>
+        <table>
+        {% for key, value in my_dict.items %}
+        <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>

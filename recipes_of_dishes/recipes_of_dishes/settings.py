@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-$(lndv(8+e5ykj33%8_j)-v_uub-n-^#%o*#m2dw7joinea((z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1', 
+    '192.168.1.65'
+]
 
 
 # Application definition
@@ -37,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp',
+    # 'myapp2',
+    'myapp3',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +60,9 @@ ROOT_URLCONF = 'recipes_of_dishes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates' # base directory for templates
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
