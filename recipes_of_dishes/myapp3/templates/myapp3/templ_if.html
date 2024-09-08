@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>If template</title>
+    </head>
+    <body>
+        <h2>Template with if</h2>
+        {% if message %}
+        <p>You have message: <br> {{ message }}</p>
+        {% endif %}
+
+        <p> Count messages {{ number }}
+        {% if number == 1 %}
+            post
+        {% elif number >= 2 and number <= 4 %}
+            two posts
+        {% else %}
+            more two posts
+        {% endif %}
+    </p>
+    </body>
+</html>

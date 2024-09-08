@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-ed"
+version = "0.1.0"
+description = ""
+authors = ["arletino <titkov@nxt.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1"
+pillow = "^10.4.0"
+django-debug-toolbar = "^4.4.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
